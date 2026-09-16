@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore — Connect</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body data-page="explore">
+<div class="app-bg"><div class="bg-orb orb-one"></div><div class="bg-orb orb-two"></div></div>
+<div class="app-layout">
+<aside class="sidebar glass">
+  <a class="logo" href="home.html"><span class="brand-mark small">C</span><span>Connect</span></a>
+  <nav>
+    <a href="home.html" data-page="home"><span>⌂</span>Home</a>
+    <a href="explore.html" data-page="explore"><span>⌕</span>Explore</a>
+    <a href="reels.html" data-page="reels"><span>▶</span>Reels</a>
+    <a href="messages.html" data-page="messages"><span>✉</span>Messages <b class="badge">3</b></a>
+    <a href="notifications.html" data-page="notifications"><span>♡</span>Notifications <b class="badge">5</b></a>
+    <a href="profile.html" data-page="profile"><span>◎</span>Profile</a>
+    <a href="create-post.html" data-page="create"><span>＋</span>Create Post</a>
+  </nav>
+  <div class="sidebar-bottom">
+    <div class="user-mini"><div class="avatar user-avatar">JD</div><div><strong class="user-name">John Doe</strong><small class="user-email">john@example.com</small></div></div>
+    <button id="logoutBtn" class="ghost-btn full">↪ Logout</button>
+  </div>
+</aside>
+
+<main class="main-content ">
+  <header class="mobile-header"><a class="logo" href="home.html"><span class="brand-mark small">C</span>Connect</a><button class="menu-btn" id="menuBtn">☰</button></header>
+  
+<div class="page-heading"><div><p class="eyebrow">DISCOVER</p><h1>Explore</h1><p class="muted">Find people, communities, and ideas you care about.</p></div><div class="search-box">⌕ <input placeholder="Search Connect"></div></div>
+<div class="filter-row"><button class="filter active">For you</button><button class="filter">People</button><button class="filter">Posts</button><button class="filter">Videos</button><button class="filter">Topics</button></div>
+<div class="explore-grid">
+<div class="explore-card glass"><div class="explore-art art-1">TECH</div><h3>Technology</h3><p>24.8K posts this week</p></div>
+<div class="explore-card glass"><div class="explore-art art-2">TRAVEL</div><h3>Travel & Adventure</h3><p>18.2K posts this week</p></div>
+<div class="explore-card glass"><div class="explore-art art-3">SPORT</div><h3>Football</h3><p>15.6K posts this week</p></div>
+<div class="explore-card glass"><div class="explore-art art-4">MUSIC</div><h3>Music</h3><p>11.9K posts this week</p></div>
+<div class="explore-card glass"><div class="explore-art art-5">DESIGN</div><h3>Design</h3><p>9.4K posts this week</p></div>
+<div class="explore-card glass"><div class="explore-art art-6">FOOD</div><h3>Food</h3><p>7.8K posts this week</p></div>
+</div>
+
+</main>
+<aside class="rightbar">
+  <div class="glass panel">
+    <div class="panel-title"><h3>Trending now</h3><span>•••</span></div>
+    <div class="trend"><strong>#Rwanda</strong><small>12.4K posts</small></div>
+    <div class="trend"><strong>#Technology</strong><small>8.7K posts</small></div>
+    <div class="trend"><strong>#Football</strong><small>7.1K posts</small></div>
+    <div class="trend"><strong>#Travel</strong><small>5.8K posts</small></div>
+  </div>
+  <div class="glass panel">
+    <div class="panel-title"><h3>Suggested for you</h3><a href="explore.html">See all</a></div>
+    <div class="suggestion"><div class="avatar">SW</div><div><strong>Sarah Wilson</strong><small>@sarahwilson</small></div><button class="follow-btn">Follow</button></div>
+    <div class="suggestion"><div class="avatar">DK</div><div><strong>David Kim</strong><small>@davidkim</small></div><button class="follow-btn">Follow</button></div>
+    <div class="suggestion"><div class="avatar">TW</div><div><strong>Tech World</strong><small>@techworld</small></div><button class="follow-btn">Follow</button></div>
+  </div>
+  <div class="glass profile-side"><div class="avatar large user-avatar">JD</div><h3 class="user-name">John Doe</h3><p class="muted">@johndoe</p><div class="profile-stats"><span><b>248</b>Posts</span><span><b>1.8K</b>Followers</span><span><b>326</b>Following</span></div><a class="outline-btn full" href="profile.html">View profile</a></div>
+</aside>
+</div>
+<div id="toast" class="toast"></div><script src="app.js"></script></body></html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home — Connect</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body data-page="home">
+<div class="app-bg"><div class="bg-orb orb-one"></div><div class="bg-orb orb-two"></div></div>
+<div class="app-layout">
+<aside class="sidebar glass">
+  <a class="logo" href="home.html"><span class="brand-mark small">C</span><span>Connect</span></a>
+  <nav>
+    <a href="home.html" data-page="home"><span>⌂</span>Home</a>
+    <a href="explore.html" data-page="explore"><span>⌕</span>Explore</a>
+    <a href="reels.html" data-page="reels"><span>▶</span>Reels</a>
+    <a href="messages.html" data-page="messages"><span>✉</span>Messages <b class="badge">3</b></a>
+    <a href="notifications.html" data-page="notifications"><span>♡</span>Notifications <b class="badge">5</b></a>
+    <a href="profile.html" data-page="profile"><span>◎</span>Profile</a>
+    <a href="create-post.html" data-page="create"><span>＋</span>Create Post</a>
+  </nav>
+  <div class="sidebar-bottom">
+    <div class="user-mini"><div class="avatar user-avatar">JD</div><div><strong class="user-name">John Doe</strong><small class="user-email">john@example.com</small></div></div>
+    <button id="logoutBtn" class="ghost-btn full">↪ Logout</button>
+  </div>
+</aside>
+
+<main class="main-content ">
+  <header class="mobile-header"><a class="logo" href="home.html"><span class="brand-mark small">C</span>Connect</a><button class="menu-btn" id="menuBtn">☰</button></header>
+  
+<div class="topbar"><div><p class="eyebrow">YOUR SOCIAL SPACE</p><h1>Good morning, <span class="user-first-name">John</span> 👋</h1></div><div class="top-actions"><button class="icon-btn">⌕</button><a href="notifications.html" class="icon-btn">♡<i></i></a><a href="profile.html" class="avatar user-avatar">JD</a></div></div>
+<section class="stories glass"><div class="stories-head"><h2>Stories</h2><a href="#">See all</a></div><div class="story-list">
+<div class="story add-story"><div class="story-ring">＋</div><span>Your story</span></div>
+<div class="story"><div class="story-ring photo-a">SW</div><span>Sarah</span></div><div class="story"><div class="story-ring photo-b">DK</div><span>David</span></div><div class="story"><div class="story-ring photo-c">AM</div><span>Amelia</span></div><div class="story"><div class="story-ring photo-d">JM</div><span>James</span></div><div class="story"><div class="story-ring photo-e">EL</div><span>Emma</span></div></div></section>
+
+<section class="composer glass"><div class="avatar user-avatar">JD</div><a href="create-post.html" class="composer-input">What's on your mind, <span class="user-first-name">John</span>?</a><a href="create-post.html" class="media-btn">▣ Photo / Video</a></section>
+
+<section class="feed">
+<article class="post glass"><div class="post-head"><div class="avatar">SW</div><div><strong>Sarah Wilson</strong><small>@sarahwilson · 2h</small></div><button class="more-btn">•••</button></div><p>Sunsets, good conversations, and a little gratitude. Sometimes the simple moments are the best ones. ✨</p><div class="post-media gradient-media sunset"><span>Beautiful evening</span></div><div class="post-meta"><span>♡ 1.2K likes</span><span>84 comments</span><span>21 shares</span></div><div class="post-actions"><button class="like-btn">♡ Like</button><button>◯ Comment</button><button>↗ Share</button><button>🔖 Save</button></div></article>
+
+<article class="post glass"><div class="post-head"><div class="avatar">DK</div><div><strong>David Kim</strong><small>@davidkim · 5h</small></div><button class="more-btn">•••</button></div><p>Working on something exciting today. What technology are you most interested in learning this year? 🚀</p><div class="post-media gradient-media tech"><span>BUILD • LEARN • CREATE</span></div><div class="post-meta"><span>♡ 846 likes</span><span>52 comments</span><span>17 shares</span></div><div class="post-actions"><button class="like-btn">♡ Like</button><button>◯ Comment</button><button>↗ Share</button><button>🔖 Save</button></div></article>
+</section>
+
+</main>
+<aside class="rightbar">
+  <div class="glass panel">
+    <div class="panel-title"><h3>Trending now</h3><span>•••</span></div>
+    <div class="trend"><strong>#Rwanda</strong><small>12.4K posts</small></div>
+    <div class="trend"><strong>#Technology</strong><small>8.7K posts</small></div>
+    <div class="trend"><strong>#Football</strong><small>7.1K posts</small></div>
+    <div class="trend"><strong>#Travel</strong><small>5.8K posts</small></div>
+  </div>
+  <div class="glass panel">
+    <div class="panel-title"><h3>Suggested for you</h3><a href="explore.html">See all</a></div>
+    <div class="suggestion"><div class="avatar">SW</div><div><strong>Sarah Wilson</strong><small>@sarahwilson</small></div><button class="follow-btn">Follow</button></div>
+    <div class="suggestion"><div class="avatar">DK</div><div><strong>David Kim</strong><small>@davidkim</small></div><button class="follow-btn">Follow</button></div>
+    <div class="suggestion"><div class="avatar">TW</div><div><strong>Tech World</strong><small>@techworld</small></div><button class="follow-btn">Follow</button></div>
+  </div>
+  <div class="glass profile-side"><div class="avatar large user-avatar">JD</div><h3 class="user-name">John Doe</h3><p class="muted">@johndoe</p><div class="profile-stats"><span><b>248</b>Posts</span><span><b>1.8K</b>Followers</span><span><b>326</b>Following</span></div><a class="outline-btn full" href="profile.html">View profile</a></div>
+</aside>
+</div>
+<div id="toast" class="toast"></div><script src="app.js"></script></body></html>

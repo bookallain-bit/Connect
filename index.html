@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect — Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+  <div class="bg-orb orb-one"></div><div class="bg-orb orb-two"></div>
+  <main class="auth-shell glass">
+    <section class="auth-brand">
+      <div class="brand-mark">C</div>
+      <h1>Connect</h1>
+      <p>Share moments. Discover people. Stay connected.</p>
+      <div class="auth-preview">
+        <div class="mini-avatar">JD</div><div><strong>John Doe</strong><small>Building meaningful connections</small></div>
+      </div>
+    </section>
+    <section class="auth-card">
+      <div class="auth-tabs">
+        <button class="tab active" data-auth-tab="login">Login</button>
+        <button class="tab" data-auth-tab="register">Create account</button>
+      </div>
+
+      <form id="loginForm" class="auth-form">
+        <div><h2>Welcome back 👋</h2><p class="muted">Sign in to continue to Connect.</p></div>
+        <label>Email<input id="loginEmail" type="email" placeholder="you@example.com" required></label>
+        <label>Password<div class="password-wrap"><input id="loginPassword" type="password" placeholder="••••••••" required><button type="button" class="eye" data-toggle-password="loginPassword">◉</button></div></label>
+        <div class="form-row"><label class="check"><input type="checkbox"> Remember me</label><button type="button" class="link-btn" id="forgotBtn">Forgot password?</button></div>
+        <button class="gradient-btn auth-submit" type="submit">Login</button>
+        <div class="divider"><span>or continue with</span></div>
+        <div class="social-auth"><button type="button">G Google</button><button type="button">f Facebook</button></div>
+        <p class="auth-note">Demo website — your session is stored locally in this browser.</p>
+      </form>
+
+      <form id="registerForm" class="auth-form hidden">
+        <div><h2>Create your account ✨</h2><p class="muted">Join the Connect community.</p></div>
+        <label>Full name<input id="registerName" type="text" placeholder="John Doe" required></label>
+        <label>Email<input id="registerEmail" type="email" placeholder="you@example.com" required></label>
+        <label>Password<div class="password-wrap"><input id="registerPassword" type="password" placeholder="Create a password" minlength="6" required><button type="button" class="eye" data-toggle-password="registerPassword">◉</button></div></label>
+        <label>Confirm password<input id="registerConfirm" type="password" placeholder="Repeat your password" minlength="6" required></label>
+        <label class="check"><input id="terms" type="checkbox" required> I agree to the Terms and Privacy Policy.</label>
+        <button class="gradient-btn auth-submit" type="submit">Create account</button>
+        <p class="auth-note">No real server is connected yet. This is the complete front-end foundation for Phase 3.</p>
+      </form>
+    </section>
+  </main>
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
